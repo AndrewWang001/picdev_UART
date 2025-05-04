@@ -1,0 +1,3 @@
+[submodule "ltt_test/canlib"]
+	path = ltt_test/canlib
+	url = https://github.com/waterloo-rocketry/canlib
