@@ -10,7 +10,7 @@
 #define MAX_LOOP_TIME_DIFF_ms 500
 #define MAX_SENSOR_TIME_DIFF_ms 5
 
-static void can_msg_handler(const can_msg_t *msg);
+static void can_msg_handler(const can_msg_t *msg); //hello branch
 
 //memory pool for the CAN tx buffer
 uint8_t tx_pool[100];
