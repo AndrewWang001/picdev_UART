@@ -6,13 +6,13 @@
 
 void gpio_init(void) {
     // set as outputs
-    TRISC5 = 0; // LED
-    TRISC6 = 0; // LED
-    TRISC7 = 0; // LED
+    TRISB4 = 0; // LED
+    TRISB3 = 0; // LED
+    TRISB2 = 0; // LED
     // turn LEDs off
-    LATC5 = !LED_ON;
-    LATC6 = !LED_ON;
-    LATC7 = !LED_ON;
+    LATB4 = !LED_ON;
+    LATB3 = !LED_ON;
+    LATB2 = !LED_ON;
     
     // current sense input
     TRISA4 = 1;
@@ -22,13 +22,13 @@ void gpio_init(void) {
 }
 
 void RED_LED_SET(bool value) {
-    LATC6 = !value ^ LED_ON;
+    LATB4 = !value ^ LED_ON;
 }
 void BLUE_LED_SET(bool value) {
-    LATC7 = !value ^ LED_ON;
+    LATB3 = !value ^ LED_ON;
 }
 void WHITE_LED_SET(bool value) {
-    LATC5 = !value ^ LED_ON;
+    LATB2 = !value ^ LED_ON;
 }
 
 void SET_RADIO_POWER(bool value) {
