@@ -46,6 +46,7 @@ int main(void) {
             // visual heartbeat indicator
             BLUE_LED_SET(heartbeat);
             RED_LED_SET(heartbeat);
+            WHITE_LED_SET(heartbeat);
             heartbeat = !heartbeat;
         }
     }
